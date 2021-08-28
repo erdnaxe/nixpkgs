@@ -26,24 +26,26 @@ stdenv.mkDerivation rec {
     sha256 = "19yii3bdgivxrcka1c4g6dpbmql5nyawwhzlsph7z6bs68nambm6";
   };
 
+  strictDeps = true;
+
   nativeBuildInputs = [
+    desktop-file-utils
+    gettext
+    glib
+    itstool
+    libhandy
+    libxml2
     meson
     ninja
     pkg-config
-    vala
-    gettext
-    itstool
-    libxml2
-    desktop-file-utils
-    wrapGAppsHook
     python3
+    vala
+    wrapGAppsHook
   ];
 
   buildInputs = [
     gtk3
     libhandy
-    glib
-    gnome.adwaita-icon-theme
   ];
 
   doCheck = true;
