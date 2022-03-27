@@ -8395,6 +8395,8 @@ with pkgs;
 
   phash = callPackage ../development/libraries/phash { };
 
+  piped = callPackage ../servers/piped { };
+
   pnmixer = callPackage ../tools/audio/pnmixer { };
 
   pulsemixer = callPackage ../tools/audio/pulsemixer { };
